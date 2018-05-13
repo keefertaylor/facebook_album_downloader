@@ -1,0 +1,64 @@
+{
+  "name": "Album Downloader",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Automated downloads of Facebook Albums",
+
+  "author": "Keefer Tayor, keefer.t@gmail.com",
+  "homepage_url": "http://keefertaylor.com",
+  
+  "icons": {
+	  "16": "icons/16.png",
+	  "48": "icons/48.png",
+	  "128": "icons/128.png"
+  },  
+  
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+	  "default_title": "Download Album"
+  },
+//  "browser_action": {
+//    "default_title": "Inject!"
+//  },
+  "permissions": [
+    "https://www.facebook.com/*",
+    "tabs"
+  ]
+}
+
+/*{
+  "manifest_version": 2,
+
+  "name": "Facebook Album Downloader",
+  "version": "1.0.0",
+
+  "description": "Automated downloads of Facebook Albums",
+  "icons": {
+	  "16": "icons/16.png",
+	  "48": "icons/48.png",
+	  "128": "icons/128.png"
+  },
+
+  "author": "Keefer Tayor, keefer.t@gmail.com",
+
+  "br": {
+	  "default_icon": {
+		  "16": "icons/16.png",
+		  "24": "icons/48.png",
+		  "32": "icons/128.png"
+	  },
+	  "default_title": "Facebook Album Downloader"
+  },
+  "permissions": [
+	  "tabs", // Verify this is required
+	  "http://facebook.com/photo.php/*",
+	  "https://facebook.com/photo.php/*"
+  ],
+  "background": { "scripts": ["background.js"] }
+
+}*/
